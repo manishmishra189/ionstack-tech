@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coming Soon - Ionstack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: #00f9ff;
+      text-shadow: 0 0 10px #00f9ff, 0 0 20px #00f9ff, 0 0 40px #0ff;
+      animation: fadeIn 2s ease-out;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: #bbb;
+      max-width: 500px;
+      animation: fadeIn 3s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Stars animation */
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: transparent url('https://assets.codepen.io/13471/stars.png') repeat top center;
+      animation: moveStars 200s linear infinite;
+      z-index: -1;
+      opacity: 0.3;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to { background-position: 10000px 5000px; }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <h1>🚀 Coming Soon</h1>
+  <p>Ionstack.tech is preparing for launch. Something awesome is on the way!</p>
+</body>
+</html>
